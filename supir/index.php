@@ -2,7 +2,7 @@
 include '../db.php';
 
 $nama = $_GET['nama'] ?? null;
-$query = "SELECT * FROM client";
+$query = "SELECT * FROM supir";
 
 if ($nama!=null){
     $query = $query."  WHERE nama LIKE '%$nama%'";
